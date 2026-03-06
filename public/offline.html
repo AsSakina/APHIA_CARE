@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hors ligne - APHIA</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background-color: #fffcff;
+        color: #222e50;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+      .container {
+        text-align: center;
+        max-width: 400px;
+      }
+      .icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1.5rem;
+        background-color: #10ffcb;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .icon svg {
+        width: 40px;
+        height: 40px;
+        color: #222e50;
+      }
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+      }
+      p {
+        color: #70747f;
+        line-height: 1.6;
+      }
+      .retry-btn {
+        margin-top: 1.5rem;
+        padding: 0.75rem 1.5rem;
+        background-color: #222e50;
+        color: #fffcff;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+      .retry-btn:hover {
+        background-color: #1a2440;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #060d1f;
+          color: #fffcff;
+        }
+        p {
+          color: #a0a4b0;
+        }
+        .retry-btn {
+          background-color: #10ffcb;
+          color: #222e50;
+        }
+        .retry-btn:hover {
+          background-color: #0de6b6;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a5 5 0 01-.586-6.364L6.75 9.75A9 9 0 003.636 5.636M3.636 5.636L1.5 3.5" />
+        </svg>
+      </div>
+      <h1>Vous êtes hors ligne</h1>
+      <p>Veuillez vérifier votre connexion internet et réessayer.</p>
+      <button class="retry-btn" onclick="window.location.reload()">Réessayer</button>
+    </div>
+  </body>
+</html>

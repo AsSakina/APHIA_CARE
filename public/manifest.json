@@ -1,0 +1,26 @@
+{
+  "name": "APHIA - Gestion pour pharmacies",
+  "short_name": "APHIA",
+  "description": "La plateforme intelligente de gestion pour pharmacies",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffcff",
+  "theme_color": "#222e50",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "medical", "productivity"],
+  "lang": "fr"
+}
