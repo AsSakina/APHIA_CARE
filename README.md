@@ -1,5 +1,3 @@
-# APHIA_CARE
-
 # APHIA - Pharmacy Management SaaS
 ## Complete Application Documentation
 
